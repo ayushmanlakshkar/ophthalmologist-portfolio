@@ -56,12 +56,12 @@ useEffect(()=>{
             </button>
           </div>
           <div className="hidden items-center xl:flex lg:gap-x-4">
-            <Link to="/home#aboutMe" onClick={()=>{setActive("#aboutMe")}} className=" text-sm font-semibold  text-gray-900">About Me</Link>
-            <Link to="/home#treatments" onClick={()=>{setActive("#treatments")}} className="text-sm font-semibold  text-gray-900">Treatments</Link>
+            <Link to="/#aboutMe" onClick={()=>{setActive("#aboutMe")}} className=" text-sm font-semibold  text-gray-900">About Me</Link>
+            <Link to="/#treatments" onClick={()=>{setActive("#treatments")}} className="text-sm font-semibold  text-gray-900">Treatments</Link>
             <Link to="/experience" onClick={()=>{setActive("experience")}} className="text-sm font-semibold  text-gray-900">Experience</Link>
             <Link to="/Publications" onClick={()=>{setActive("publication")}} className="text-sm font-semibold  text-gray-900">Publications</Link>
             <Link to="/AwardsandHonours" onClick={()=>{setActive("awards")}} className="text-sm font-semibold  text-gray-900">Awards</Link>
-            <Link to="/home#contactUs" onClick={()=>{setActive("#contactUs")}} className="text-sm font-semibold  text-gray-900">Contact Us</Link>
+            <Link to="/#contactUs" onClick={()=>{setActive("#contactUs")}} className="text-sm font-semibold  text-gray-900">Contact Us</Link>
             <div className="py-3 px-5 bg-blue-600 text-sm font-semibold  text-white rounded-full">
               +919810690986
             </div>
@@ -85,12 +85,12 @@ useEffect(()=>{
           <div className="mt-6 ">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
-                <Link to="/home#aboutMe" onClick={()=>{setActive("#aboutMe")}}  className={`${active=="#aboutMe"?"bg-gray-50":null} navbarOption -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900hover:bg-gray-50`}>About Me</Link>
-                <Link to="/home#treatments" onClick={()=>{setActive("#treatments")}} className={`${active=="#treatments"?"bg-gray-50":null} navbarOption -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50`}>Treatments</Link>
+                <Link to="/#aboutMe" onClick={()=>{setActive("#aboutMe")}}  className={`${active=="#aboutMe"?"bg-gray-50":null} navbarOption -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900hover:bg-gray-50`}>About Me</Link>
+                <Link to="/#treatments" onClick={()=>{setActive("#treatments")}} className={`${active=="#treatments"?"bg-gray-50":null} navbarOption -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50`}>Treatments</Link>
                 <Link to="/Experience" onClick={()=>{setActive("experience")}} className={`${active=="experience"?"bg-gray-50":null} navbarOption -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50`}>Experience</Link>
                 <Link to="/Publications" onClick={()=>{setActive("publication")}} className={`${active=="publication"?"bg-gray-50":null} navbarOption -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50`}>Publications</Link>
                 <Link to="/AwardsandHonours" onClick={()=>{setActive("awards")}} className={`${active=="awards"?"bg-gray-50":null} navbarOption -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50`}>Awards</Link>
-                <Link to="/home#contactUs" onClick={()=>{setActive("#contactUs")}} className={`${active=="#contactUs"?"bg-gray-50":null} navbarOption -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50`}>Contact Us</Link>
+                <Link to="/#contactUs" onClick={()=>{setActive("#contactUs")}} className={`${active=="#contactUs"?"bg-gray-50":null} navbarOption -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50`}>Contact Us</Link>
               </div>
 
             </div>
