@@ -36,3 +36,139 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+
+
+.myHeader {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.navHidden {
+  background-color: rgb(195, 228, 255, 0.8);
+}
+.aboutMe {
+  background: linear-gradient(rgba(177, 220, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%);
+}
+
+.backgroundImg {
+  background-image: url("/public/images/backgroundImg.png");
+  position: absolute;
+  top: -50px;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-color: #F2F7FF;
+  z-index: -1;
+  filter: opacity(25%);
+}
+@media screen and (max-width: 768px) {
+  /* .backgroundImg{
+    height:120vh
+  } */
+}
+.aboutContainer{
+}
+
+.doctorTitle {
+  background-color: #2366eb;
+  color: #ffffff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  /* font-size: 1rem; */
+  font-weight: normal;
+}
+.introHeading {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  /* font-size: 3vh; */
+  font-weight: bold;
+  text-align: left;
+}
+.doctorIntro {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  /* font-size: 2vh; */
+  font-weight: normal;
+  text-align: left;
+}
+
+.treatments {
+  background-color: #f2f7ff;
+}
+
+.card {
+  color: black;
+  width:22vw;
+  outline: 1px solid #ebebeb; /* Adjust the width of the stroke as needed */
+  outline-offset: -1px; /* Negative value to create a slight overlap */
+  box-sizing: border-box;
+  aspect-ratio: 1 !important;
+}
+.iconSVG{
+  fill:#2366EB
+}
+
+.card:hover {
+  color: white;
+  background-color: #162555;
+  cursor: pointer;
+}
+.card:hover .iconSVG{
+fill:#ffffff
+}
+
+.contactUsDetails {
+  background-color: #2366eb;
+  color: #ffffff;
+}
+
+.experienceHeading {
+  background: linear-gradient(rgba(177, 220, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%);
+}
+
+.currentExperience {
+  background-color: rgba(
+    35,
+    102,
+    235,
+    0.2
+  ); /* Adjust the alpha value (0.5 for 50% transparency) */
+  border-left: 0.5em solid #2366eb;
+}
+.list {
+  list-style-type: disc;
+}
+ol li::marker {
+  color: #2366eb; /* Specify your desired color */
+  font-size: 25px;
+}
+
+.hospitalExperience {
+  background-color: #f2f7ff;
+  outline: 2px solid #ebebeb; /* Adjust the width of the stroke as needed */
+  outline-offset: -1px; /* Negative value to create a slight overlap */
+  box-sizing: border-box;
+}
+
+.awardCard {
+  width: 28vw;
+  background-color: #f2f7ff;
+  outline: 1px solid #ebebeb; /* Adjust the width of the stroke as needed */
+  outline-offset: -1px; /* Negative value to create a slight overlap */
+  box-sizing: border-box;
+  margin: 10px;
+  min-width: 325px;
+}
+
+.publicationCard {
+  background-color: #f2f7ff;
+  outline: 1px solid #ebebeb; /* Adjust the width of the stroke as needed */
+}
+.map{
+height: 30rem;
+}
