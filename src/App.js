@@ -1,7 +1,4 @@
 import './App.css';
-import AboutMe from './components/HomePage/AboutMe';
-import ContactUs from './components/HomePage/ContactUs';
-import Treatments from './components/HomePage/Treatments';
 import Navbar from './components/Navbar';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';

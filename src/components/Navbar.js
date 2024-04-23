@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { NavLink,Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(true);
@@ -24,16 +24,7 @@ useEffect(()=>{
 },[active])
 
 
-  useEffect(() => {
-    const hideMenu = () => {
-      if (window.innerWidth < 768 && menuOpen) {
-        setMenuOpen(false);
-      } else {
-        setMenuOpen(true);
-      }
-    }
-    hideMenu()
-  }, [])
+
 
   return (
     <header className="myHeader h-28 absolute top-0 w-full flex">
@@ -85,12 +76,12 @@ useEffect(()=>{
           <div className="mt-6 ">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
-                <Link to="/#aboutMe" onClick={()=>{setActive("#aboutMe")}}  className={`${active=="#aboutMe"?"bg-gray-50":null} navbarOption -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900hover:bg-gray-50`}>About Me</Link>
-                <Link to="/#treatments" onClick={()=>{setActive("#treatments")}} className={`${active=="#treatments"?"bg-gray-50":null} navbarOption -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50`}>Treatments</Link>
-                <Link to="/Experience" onClick={()=>{setActive("experience")}} className={`${active=="experience"?"bg-gray-50":null} navbarOption -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50`}>Experience</Link>
-                <Link to="/Publications" onClick={()=>{setActive("publication")}} className={`${active=="publication"?"bg-gray-50":null} navbarOption -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50`}>Publications</Link>
-                <Link to="/AwardsandHonours" onClick={()=>{setActive("awards")}} className={`${active=="awards"?"bg-gray-50":null} navbarOption -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50`}>Awards</Link>
-                <Link to="/#contactUs" onClick={()=>{setActive("#contactUs")}} className={`${active=="#contactUs"?"bg-gray-50":null} navbarOption -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50`}>Contact Us</Link>
+                <Link to="/#aboutMe" onClick={()=>{setActive("#aboutMe")}}  className={`${active==="#aboutMe"?"bg-gray-50":null} navbarOption -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900hover:bg-gray-50`}>About Me</Link>
+                <Link to="/#treatments" onClick={()=>{setActive("#treatments")}} className={`${active==="#treatments"?"bg-gray-50":null} navbarOption -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50`}>Treatments</Link>
+                <Link to="/Experience" onClick={()=>{setActive("experience")}} className={`${active==="experience"?"bg-gray-50":null} navbarOption -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50`}>Experience</Link>
+                <Link to="/Publications" onClick={()=>{setActive("publication")}} className={`${active==="publication"?"bg-gray-50":null} navbarOption -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50`}>Publications</Link>
+                <Link to="/AwardsandHonours" onClick={()=>{setActive("awards")}} className={`${active==="awards"?"bg-gray-50":null} navbarOption -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50`}>Awards</Link>
+                <Link to="/#contactUs" onClick={()=>{setActive("#contactUs")}} className={`${active==="#contactUs"?"bg-gray-50":null} navbarOption -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50`}>Contact Us</Link>
               </div>
 
             </div>
