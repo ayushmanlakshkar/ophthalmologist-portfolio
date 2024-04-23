@@ -47,12 +47,12 @@ useEffect(()=>{
             </button>
           </div>
           <div className="hidden items-center xl:flex lg:gap-x-4">
-            <Link to="/#aboutMe" onClick={()=>{setActive("#aboutMe")}} className=" text-sm font-semibold  text-gray-900">About Me</Link>
-            <Link to="/#treatments" onClick={()=>{setActive("#treatments")}} className="text-sm font-semibold  text-gray-900">Treatments</Link>
-            <Link to="/experience" onClick={()=>{setActive("experience")}} className="text-sm font-semibold  text-gray-900">Experience</Link>
-            <Link to="/Publications" onClick={()=>{setActive("publication")}} className="text-sm font-semibold  text-gray-900">Publications</Link>
-            <Link to="/AwardsandHonours" onClick={()=>{setActive("awards")}} className="text-sm font-semibold  text-gray-900">Awards</Link>
-            <Link to="/#contactUs" onClick={()=>{setActive("#contactUs")}} className="text-sm font-semibold  text-gray-900">Contact Us</Link>
+            <Link to="/#aboutMe" onClick={()=>{setActive("#aboutMe")}} className=" text-sm font-bold  text-gray-900">About Me</Link>
+            <Link to="/#treatments" onClick={()=>{setActive("#treatments")}} className="text-sm font-bold  text-gray-900">Treatments</Link>
+            <Link to="/experience" onClick={()=>{setActive("experience")}} className="text-sm font-bold  text-gray-900">Experience</Link>
+            <Link to="/Publications" onClick={()=>{setActive("publication")}} className="text-sm font-bold  text-gray-900">Publications</Link>
+            <Link to="/AwardsandHonours" onClick={()=>{setActive("awards")}} className="text-sm font-bold  text-gray-900">Awards</Link>
+            <Link to="/#contactUs" onClick={()=>{setActive("#contactUs")}} className="text-sm font-bold  text-gray-900">Contact Us</Link>
             <div className="py-3 px-5 bg-blue-600 text-sm font-semibold  text-white rounded-full">
               +919810690986
             </div>
