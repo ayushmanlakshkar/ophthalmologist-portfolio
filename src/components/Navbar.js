@@ -27,7 +27,7 @@ useEffect(()=>{
 
 
   return (
-    <header className="myHeader h-28 absolute top-0 w-full flex">
+    <header className="myHeader h-28 fixed top-0 w-full flex">
       <nav className="flex w-full items-center p-5 px-8 xl:px-40">
         <div className="flex-1 mr-5">
           <svg width="249" height="77" viewBox="0 0 249 77" fill="none" xmlns="http://www.w3.org/2000/svg">

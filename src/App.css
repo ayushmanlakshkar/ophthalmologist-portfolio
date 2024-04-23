@@ -41,7 +41,9 @@
 
 
 .myHeader {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(216, 238, 255, 0.95);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
+
 }
 
 .navHidden {
@@ -65,11 +67,7 @@
   z-index: -1;
   filter: opacity(25%);
 }
-@media screen and (max-width: 768px) {
-  /* .backgroundImg{
-    height:120vh
-  } */
-}
+
 .aboutContainer{
 }
 
@@ -117,9 +115,22 @@
   background-color: #162555;
   cursor: pointer;
 }
+
 .card:hover .iconSVG{
 fill:#ffffff
 }
+
+@media only screen and (max-width: 1024px) {
+  .card:hover {
+    color: black;
+    background-color: white;
+    cursor: pointer;
+  }
+  .card:hover .iconSVG{
+    fill:#2366EB
+    }
+}
+
 
 .contactUsDetails {
   background-color: #2366eb;
@@ -168,6 +179,7 @@ ol li::marker {
   background-color: #f2f7ff;
   outline: 1px solid #ebebeb; /* Adjust the width of the stroke as needed */
 }
+
 .map{
 height: 30rem;
 }
