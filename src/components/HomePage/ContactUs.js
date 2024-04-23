@@ -1,32 +1,8 @@
 import React from 'react'
-// import GoogleMapReact from 'google-map-react';
 
 function ContactUs() {
 
-  // const latitude = 28.5298;
-  // const longitude = 77.2175;
-  // const AnyReactComponent = ({ text }) => (
-  //   <div style={{
-  //     color: 'white', 
-  //     background: 'grey',
-  //     padding: '15px 10px',
-  //     display: 'inline-flex',
-  //     textAlign: 'center',
-  //     alignItems: 'center',
-  //     justifyContent: 'center',
-  //     borderRadius: '100%',
-  //     transform: 'translate(-50%, -50%)'
-  //   }}>
-  //     {text}
-  //   </div>
-  // );  const defaultProps = {
-  //   center: {
-  //     lat: 10.99835602,
-  //     lng: 77.01502627
-  //   },
-  //   zoom: 11
-  // };
-  
+
   return (
     <div className=' px-5 py-5 md:px-24 md:py-20' id='contactUs'>
       <div className=' flex flex-col w-full lg:flex-row'>
@@ -49,18 +25,20 @@ function ContactUs() {
             Foresight eye clinic 106 Rps flats sheikh sarai phase 1 Malviya nagar New delhi- 110017 Opposite- Apeejay school
           </div>
         </div>
+
+        {/* Import a Map component using Google map api 
+            by writing command on the terminal  
+            'npm i @react-google-maps/api'.
+
+            You can find the documentation on 
+            https://www.npmjs.com/package/@react-google-maps/api 
+
+            Using @react-google maps requires a personal google maps API Key the process to get it can be found here :
+            https://developers.google.com/maps/documentation/embed/get-api-key
+
+            There are no costs to use Google Maps API but you have to verify your card details to get your API Key.  */}
         <div className='map w-full lg:w-3/5 bg-black'>
-        {/* <GoogleMapReact
-        bootstrapURLKeys={{ key: "" }}
-        defaultCenter={defaultProps.center}
-        defaultZoom={defaultProps.zoom}
-      >
-        <AnyReactComponent
-          lat={59.955413}
-          lng={30.337844}
-          text="HERE"
-        />
-      </GoogleMapReact> */}
+        {/* Paste ur map component here with 100% width and height */}
         </div>
       </div>
 
