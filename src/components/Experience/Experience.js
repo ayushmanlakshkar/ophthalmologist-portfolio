@@ -55,6 +55,7 @@ function Experience() {
                             <li>
                                 Phacoemulsification cataract extraction.
                             </li>
+                            <li>LASIK</li>
                             <li>
                                 Penetrating keratoplasty procedure.
                             </li>
@@ -64,11 +65,12 @@ function Experience() {
                             <li>
                                 Perforating ocular injuries
                             </li>
-                            <li>
-                                Glaucoma patient management
-                            </li>
+                            
                         </ol>
                         <ol className='list'>
+                        <li>
+                                Glaucoma patient management
+                            </li>
                             <li>
                                 Ocular Ultrasonography procedure.
                             </li>
@@ -81,7 +83,9 @@ function Experience() {
                             <li>
                                 OPTICAL coherence Tomography(OCT)
                             </li>
-                            <li>ANTI VEGF THERAPY</li>
+                            <li>
+                                ANTI VEGF THERAPY
+                            </li>
                         </ol>
                     </div>
                 </div>
