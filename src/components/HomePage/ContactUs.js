@@ -4,7 +4,7 @@ function ContactUs() {
 
 
   return (
-    <div className=' px-5 py-5 md:px-24 md:py-20' id='contactUs'>
+    <div className=' px-5 pt-5 pb-4 md:px-24 md:pt-20 md:pb-10' id='contactUs'>
       <div className=' flex flex-col w-full lg:flex-row'>
         <div className='contactUsDetails w-full py-7 px-6 flex flex-col gap-5 lg:w-2/5 lg:h-auto'>
           <div className='text-left font-extrabold text-2xl	'>
