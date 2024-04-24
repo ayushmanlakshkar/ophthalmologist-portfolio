@@ -37,14 +37,14 @@ function Experience() {
                                 Consultant Ophthalmology at BEE ENN hospital, Jammu. September ‘2002 to April 2005.
                             </li>
                             <li>
-                                Senior Consultant Ophthalmology at Banarsidas Chandiwala Eye Institute, New Delhi Since May 2005
+                                Senior Consultant Ophthalmology at Banarsidas Chandiwala Eye Institute, New Delhi from May 2005 to April 2004
                             </li>
                         </ol>
                     </div>
                 </div>
                 <div className='hospitalExperience mx-7 my-10 text-left py-7 px-5 md:mx-32 md:px-20'>
                     <div className='font-bold text-2xl mb-3'>
-                        Clinic Experience
+                        Clinical Experience
                     </div>
                     <div className='pl-3 flex flex-col items-start gap-0 md:flex-row md:gap-20 md:items-center'>
 
@@ -85,7 +85,7 @@ function Experience() {
                         </ol>
                     </div>
                 </div>
-                <div className='hospitalExperience mx-7 my-10 text-left py-7 px-5 md:mx-32 md:px-20'>
+                {/* <div className='hospitalExperience mx-7 my-10 text-left py-7 px-5 md:mx-32 md:px-20'>
                     <div className='font-bold text-2xl mb-3'>
                         Teaching Experience
                     </div>
@@ -117,7 +117,7 @@ function Experience() {
 
                         </ol>
                     </div>
-                </div>
+                </div> */}
             </div>
             </div>
         </div>

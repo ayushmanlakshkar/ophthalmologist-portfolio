@@ -2,7 +2,7 @@ import React from 'react'
 
 function Awards() {
     const awards = [
-        "Received TECHNICAL SCHOLARSHIP (Govt. of India) during M.B.B.S. (1987 to 1992)",
+        // "Received TECHNICAL SCHOLARSHIP (Govt. of India) during M.B.B.S. (1987 to 1992)",
         "2nd POSITION in IInd Prof. M.B.B.S. at Jammu University.",
         "Ist POSITION in Final Prof. M.B.B.S. at Jammu University.",
         "DISTINCTION in Pharmacology in IInd Prof. M.B.B.S.",
