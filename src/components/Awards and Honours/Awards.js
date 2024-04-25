@@ -28,8 +28,7 @@ function Awards() {
                 Awards and Honours
             </div>
             </div>
-            <div className='flex flex-wrap flex-row pt-20 px-5 md:px-20 justify-center mb-24 bg-white'>
-
+            <div className='flex flex-wrap flex-row pt-20 px-5 md:px-10 justify-center mb-24 bg-white'>
                 {awards.map((award, index) => (
                     <div key={index} className='awardCard p-5 text-left text-pretty font-semibold'>
                         {award}

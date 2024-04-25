@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Experience from './components/Experience/Experience';
 import Awards from './components/Awards and Honours/Awards';
 import Publications from './components/Publications/Publications';
+import ContactUs from './components/ContactUs';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/AwardsAndHonours" element={<Awards/>} />
           <Route path="/Publications" element={<Publications/>} />
         </Routes>
+        <ContactUs/>
       </Router>
     </div>
   );

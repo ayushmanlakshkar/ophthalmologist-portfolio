@@ -25,7 +25,6 @@ function ContactUs() {
             Foresight eye clinic 106 Rps flats sheikh sarai phase 1 Malviya nagar New delhi- 110017 Opposite- Apeejay school
           </div>
         </div>
-
         {/* Import a Map component using Google map api 
             by writing command on the terminal  
             'npm i @react-google-maps/api'.

@@ -15,15 +15,31 @@ function Navbar() {
   }
   }
 
+  const contact=()=>{
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+  
+    if (isMobile) {
+      // If on a mobile device, open the phone dialer
+      window.open('tel:+919810690986');
+    } else {
+      // If not on a mobile device, show an alert
+      alert("Contact us at number: +919810690986");
+    }  }
+
 useEffect(()=>{
+ setMenuOpen(false)
   const hash = window.location.hash;
   if (hash) {
     const id = hash.substring(1);
     goToElement(id);
+  }else{
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth' // Optional: smooth scrolling behavior
+    });
   }
 },[active])
-
-
 
 
   return (
@@ -53,10 +69,11 @@ useEffect(()=>{
             <Link to="/Publications" onClick={()=>{setActive("publication")}} className="text-sm font-bold  text-gray-900">Publications</Link>
             <Link to="/AwardsandHonours" onClick={()=>{setActive("awards")}} className="text-sm font-bold  text-gray-900">Awards</Link>
             <Link to="/#contactUs" onClick={()=>{setActive("#contactUs")}} className="text-sm font-bold  text-gray-900">Contact Us</Link>
-            <div className="py-3 px-5 bg-blue-600 text-sm font-semibold  text-white rounded-full">
+            <a>
+            <div onClick={contact} className="py-3 px-5 bg-blue-600 text-sm font-semibold text-white rounded-full cursor-pointer">
               +919810690986
             </div>
-
+            </a>
           </div>
         </div>
       </nav>

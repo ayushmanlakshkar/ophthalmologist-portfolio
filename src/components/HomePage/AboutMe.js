@@ -9,7 +9,7 @@ function AboutMe() {
                 <div className='w-52'>
                     <img src='./images/profile.png' className='w-full' alt='Profile' />
                 </div>
-                <div className='doctorTitle w-64 py-3 px-7 rounded-full text-xl'>
+                <div onClick={()=>alert("Contact us at number : +919810690986")} className='doctorTitle w-64 py-3 px-7 rounded-full text-xl cursor-pointer'>
                     Book Appointment for<br />
                     Dr. Vishal Gupta
                 </div>
