@@ -21,16 +21,6 @@ function Navbar() {
     const screenWidth = window.innerWidth;
     const mobileWidthThreshold = 1024;
     if (screenWidth < mobileWidthThreshold) {
-      const navigate = async ()=>{
-        navigate('/')
-        setMenuOpen(false)
-        window.scrollTo({
-          top: 0,
-          left: 0,
-          behavior: 'smooth' // Optional: smooth scrolling behavior
-        });
-      }
-      await navigate();
       window.open('tel:+919810690986');
     } else {
       alert("Contact us at number: +919810690986");
