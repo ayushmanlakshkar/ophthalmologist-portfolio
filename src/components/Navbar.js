@@ -16,8 +16,8 @@ function Navbar() {
   }
 
   const contact=()=>{
-    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-  
+    const isMobile = true
+  console.log(isMobile);
     if (isMobile) {
       // If on a mobile device, open the phone dialer
       window.open('tel:+919810690986');
