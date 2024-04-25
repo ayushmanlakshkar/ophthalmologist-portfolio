@@ -1,45 +1,54 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [active,setActive] = useState("#aboutMe");
-
+  const [active, setActive] = useState("#aboutMe");
+  const navigate = useNavigate()
 
 
   const goToElement = (id) => {
     setMenuOpen(false);
     const element = document.getElementById(id);
-  if (element) {
-    element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  }
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   }
 
-  const contact=()=>{
-    const isMobile = true
-  console.log(isMobile);
-    if (isMobile) {
-      // If on a mobile device, open the phone dialer
+  const contact = () => {
+    // Get the width of the screen
+    const screenWidth = window.innerWidth;
+    const mobileWidthThreshold = 1024;
+    if (screenWidth < mobileWidthThreshold) {
+      navigate('/')
+      setMenuOpen(false)
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth' // Optional: smooth scrolling behavior
+      });
       window.open('tel:+919810690986');
     } else {
-      // If not on a mobile device, show an alert
       alert("Contact us at number: +919810690986");
-    }  }
+    }
 
-useEffect(()=>{
- setMenuOpen(false)
-  const hash = window.location.hash;
-  if (hash) {
-    const id = hash.substring(1);
-    goToElement(id);
-  }else{
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: 'smooth' // Optional: smooth scrolling behavior
-    });
   }
-},[active])
+
+  useEffect(() => {
+    setMenuOpen(false)
+    const hash = window.location.hash;
+    if (hash) {
+      const id = hash.substring(1);
+      goToElement(id);
+    } else {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth' // Optional: smooth scrolling behavior
+      });
+    }
+  }, [active])
 
 
   return (
@@ -63,17 +72,17 @@ useEffect(()=>{
             </button>
           </div>
           <div className="hidden items-center xl:flex lg:gap-x-4">
-            <Link to="/#aboutMe" onClick={()=>{setActive("#aboutMe")}} className=" text-sm font-bold  text-gray-900">About Me</Link>
-            <Link to="/#treatments" onClick={()=>{setActive("#treatments")}} className="text-sm font-bold  text-gray-900">Treatments</Link>
-            <Link to="/experience" onClick={()=>{setActive("experience")}} className="text-sm font-bold  text-gray-900">Experience</Link>
-            <Link to="/Publications" onClick={()=>{setActive("publication")}} className="text-sm font-bold  text-gray-900">Publications</Link>
-            <Link to="/AwardsandHonours" onClick={()=>{setActive("awards")}} className="text-sm font-bold  text-gray-900">Awards</Link>
-            <Link to="/#contactUs" onClick={()=>{setActive("#contactUs")}} className="text-sm font-bold  text-gray-900">Contact Us</Link>
-            
+            <Link to="/#aboutMe" onClick={() => { setActive("#aboutMe") }} className=" text-sm font-bold  text-gray-900">About Me</Link>
+            <Link to="/#treatments" onClick={() => { setActive("#treatments") }} className="text-sm font-bold  text-gray-900">Treatments</Link>
+            <Link to="/experience" onClick={() => { setActive("experience") }} className="text-sm font-bold  text-gray-900">Experience</Link>
+            <Link to="/Publications" onClick={() => { setActive("publication") }} className="text-sm font-bold  text-gray-900">Publications</Link>
+            <Link to="/AwardsandHonours" onClick={() => { setActive("awards") }} className="text-sm font-bold  text-gray-900">Awards</Link>
+            <Link to="/#contactUs" onClick={() => { setActive("#contactUs") }} className="text-sm font-bold  text-gray-900">Contact Us</Link>
+
             <div onClick={contact} className="py-3 px-5 bg-blue-600 text-sm font-semibold text-white rounded-full cursor-pointer">
               +919810690986
             </div>
-            
+
           </div>
         </div>
       </nav>
@@ -93,12 +102,15 @@ useEffect(()=>{
           <div className="mt-6 ">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
-                <Link to="/#aboutMe" onClick={()=>{setActive("#aboutMe")}}  className={`${active==="#aboutMe"?"bg-gray-50":null} navbarOption -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900hover:bg-gray-50`}>About Me</Link>
-                <Link to="/#treatments" onClick={()=>{setActive("#treatments")}} className={`${active==="#treatments"?"bg-gray-50":null} navbarOption -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50`}>Treatments</Link>
-                <Link to="/Experience" onClick={()=>{setActive("experience")}} className={`${active==="experience"?"bg-gray-50":null} navbarOption -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50`}>Experience</Link>
-                <Link to="/Publications" onClick={()=>{setActive("publication")}} className={`${active==="publication"?"bg-gray-50":null} navbarOption -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50`}>Publications</Link>
-                <Link to="/AwardsandHonours" onClick={()=>{setActive("awards")}} className={`${active==="awards"?"bg-gray-50":null} navbarOption -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50`}>Awards</Link>
-                <Link to="/#contactUs" onClick={()=>{setActive("#contactUs")}} className={`${active==="#contactUs"?"bg-gray-50":null} navbarOption -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50`}>Contact Us</Link>
+                <Link to="/#aboutMe" onClick={() => { setActive("#aboutMe") }} className={`${active === "#aboutMe" ? "bg-gray-50" : null} navbarOption -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900hover:bg-gray-50`}>About Me</Link>
+                <Link to="/#treatments" onClick={() => { setActive("#treatments") }} className={`${active === "#treatments" ? "bg-gray-50" : null} navbarOption -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50`}>Treatments</Link>
+                <Link to="/Experience" onClick={() => { setActive("experience") }} className={`${active === "experience" ? "bg-gray-50" : null} navbarOption -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50`}>Experience</Link>
+                <Link to="/Publications" onClick={() => { setActive("publication") }} className={`${active === "publication" ? "bg-gray-50" : null} navbarOption -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50`}>Publications</Link>
+                <Link to="/AwardsandHonours" onClick={() => { setActive("awards") }} className={`${active === "awards" ? "bg-gray-50" : null} navbarOption -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50`}>Awards</Link>
+                <Link to="/#contactUs" onClick={() => { setActive("#contactUs") }} className={`${active === "#contactUs" ? "bg-gray-50" : null} navbarOption -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50`}>Contact Us</Link>
+                <div onClick={contact} className="py-3 px-5 mx-auto w-1/2 min-w-min bg-blue-600 text-sm font-semibold text-white rounded-full cursor-pointer">
+                  +919810690986
+                </div>
               </div>
 
             </div>
