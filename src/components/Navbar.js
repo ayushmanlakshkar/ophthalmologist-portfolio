@@ -16,18 +16,21 @@ function Navbar() {
     }
   }
 
-  const contact = () => {
+  const contact = async() => {
     // Get the width of the screen
     const screenWidth = window.innerWidth;
     const mobileWidthThreshold = 1024;
     if (screenWidth < mobileWidthThreshold) {
-      navigate('/')
-      setMenuOpen(false)
-      window.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: 'smooth' // Optional: smooth scrolling behavior
-      });
+      const navigate =  ()=>{
+        navigate('/')
+        setMenuOpen(false)
+        window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: 'smooth' // Optional: smooth scrolling behavior
+        });
+      }
+      await navigate();
       window.open('tel:+919810690986');
     } else {
       alert("Contact us at number: +919810690986");
