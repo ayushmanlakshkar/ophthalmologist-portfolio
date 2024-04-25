@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [active, setActive] = useState("#aboutMe");
-  const navigate = useNavigate()
 
 
   const goToElement = (id) => {
@@ -20,6 +19,7 @@ function Navbar() {
     // Get the width of the screen
     const screenWidth = window.innerWidth;
     const mobileWidthThreshold = 1024;
+
     if (screenWidth < mobileWidthThreshold) {
       window.open('tel:+919810690986');
     } else {
