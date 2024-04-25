@@ -69,11 +69,11 @@ useEffect(()=>{
             <Link to="/Publications" onClick={()=>{setActive("publication")}} className="text-sm font-bold  text-gray-900">Publications</Link>
             <Link to="/AwardsandHonours" onClick={()=>{setActive("awards")}} className="text-sm font-bold  text-gray-900">Awards</Link>
             <Link to="/#contactUs" onClick={()=>{setActive("#contactUs")}} className="text-sm font-bold  text-gray-900">Contact Us</Link>
-            <a>
+            
             <div onClick={contact} className="py-3 px-5 bg-blue-600 text-sm font-semibold text-white rounded-full cursor-pointer">
               +919810690986
             </div>
-            </a>
+            
           </div>
         </div>
       </nav>
