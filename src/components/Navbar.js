@@ -21,7 +21,7 @@ function Navbar() {
     const screenWidth = window.innerWidth;
     const mobileWidthThreshold = 1024;
     if (screenWidth < mobileWidthThreshold) {
-      const navigate =  ()=>{
+      const navigate = async ()=>{
         navigate('/')
         setMenuOpen(false)
         window.scrollTo({
